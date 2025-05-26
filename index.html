@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Arvind's Portfolio</title>
+  <meta name="description" content="Arvind Prajapati's personal developer portfolio showcasing projects and growth through TalentExcel internship." />
+  <meta property="og:title" content="Arvind's Developer Portfolio" />
+  <meta property="og:description" content="Portfolio for showcasing projects and tasks completed during TalentExcel internship." />
+  <meta property="og:image" content="assets/myphoto.jpg" />
+  <meta property="og:url" content="https://arvi8080.github.io" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <link rel="stylesheet" href="style.css" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      plugins: [
+        require("daisyui")
+      ]
+    };
+  </script>
+  <link rel="icon" href="assets/favicon.ico" type="image/x-icon">
+</head>
+<body class="bg-gray-50 text-gray-800 font-sans">
+
+  <header class="bg-blue-600 text-white p-6 text-center text-3xl font-bold shadow-md">
+    Welcome to Arvind Prajapati's Portfolio
+  </header>
+
+  <nav class="bg-white shadow text-center py-4">
+    <a href="index.html" class="mx-4 text-blue-600 hover:underline">Home</a>
+    <a href="about.html" class="mx-4 text-blue-600 hover:underline">About</a>
+    <a href="books.html" class="mx-4 text-blue-600 hover:underline">Books</a>
+    <a href="contact.html" class="mx-4 text-blue-600 hover:underline">Contact</a>
+    <a href="shop.html" class="mx-4 text-blue-600 hover:underline">Shop</a>
+  </nav>
+
+  <main class="max-w-6xl mx-auto p-6">
+    <div class="text-center space-y-6 fade-in">
+      <h1 class="text-4xl font-extrabold text-blue-700">Hello, I'm <span class="text-indigo-600">Arvind Prajapati</span></h1>
+      <p class="text-lg text-gray-700">A passionate developer and lifelong learner, committed to building impactful software and helping others grow.</p>
+      <button id="openVideoBtn" class="bg-indigo-600 hover:bg-indigo-700 text-white px-6 py-3 rounded shadow">Watch Intro Video</button>
+    </div>
+
+    <div class="mt-8 flex justify-center">
+      <img src="assets/myphoto.jpg" alt="Arvind Prajapati" class="rounded-full shadow-lg w-64 h-64 object-cover border-4 border-indigo-500" />
+    </div>
+
+    <section class="mt-12 text-center">
+      <h2 class="text-2xl font-semibold mb-6">My Skills</h2>
+      <div class="flex flex-wrap justify-center gap-4 text-lg">
+        <span class="badge badge-lg badge-primary p-3">HTML</span>
+        <span class="badge badge-lg badge-secondary p-3">CSS</span>
+        <span class="badge badge-lg badge-accent p-3">JavaScript</span>
+        <span class="badge badge-lg badge-info p-3">Tailwind CSS</span>
+        <span class="badge badge-lg badge-success p-3">DaisyUI</span>
+        <span class="badge badge-lg badge-warning p-3">Responsive Design</span>
+        <span class="badge badge-lg badge-error p-3">Git/GitHub</span>
+      </div>
+    </section>
+
+    <section class="mt-12 text-center">
+      <h2 class="text-2xl font-semibold mb-6">Internship Tasks by Day</h2>
+      <div class="flex flex-wrap justify-center gap-4">
+        <a href="day1/index.html" class="btn btn-outline btn-primary">Day 1 Tasks</a>
+        <a href="day2/index.html" class="btn btn-outline btn-secondary">Day 2 Tasks</a>
+        <a href="day3/index.html" class="btn btn-outline btn-accent">Day 3 Tasks</a>
+        <a href="day4/index.html" class="btn btn-outline btn-info">Day 4 Tasks</a>
+        <a href="day5/index.html" class="btn btn-outline btn-success">Day 5 Tasks</a>
+      </div>
+    </section>
+
+    <section class="max-w-4xl mx-auto p-6 bg-yellow-100 mt-12 rounded shadow text-center">
+      <h2 class="text-2xl font-semibold mb-4">Quote of the Day</h2>
+      <div id="quote" class="text-lg italic text-gray-800">
+        <p class="text-gray-500">Loading an inspiring quote...</p>
+      </div>
+    </section>
+
+    <section class="mt-12 text-center">
+      <h2 class="text-xl font-semibold mb-4">Share My Portfolio</h2>
+      <div class="flex justify-center gap-4">
+        <a href="https://www.facebook.com/sharer/sharer.php?u=https://arvi8080.github.io" class="btn btn-outline btn-primary" target="_blank" rel="noopener noreferrer" aria-label="Share on Facebook">Facebook</a>
+        <a href="https://twitter.com/intent/tweet?url=https://arvi8080.github.io&text=Check%20out%20Arvind%20Prajapati's%20developer%20portfolio!" class="btn btn-outline btn-info" target="_blank" rel="noopener noreferrer" aria-label="Share on Twitter">Twitter</a>
+        <a href="https://www.linkedin.com/shareArticle?mini=true&url=https://arvi8080.github.io&title=Arvind%20Prajapati's%20Developer%20Portfolio&summary=Check%20out%20my%20projects%20and%20journey%20through%20the%20TalentExcel%20internship.&source=https://arvi8080.github.io" class="btn btn-outline btn-accent" target="_blank" rel="noopener noreferrer" aria-label="Share on LinkedIn">LinkedIn</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="text-center py-4 bg-gray-200 mt-12">
+    Made by Arvind Prajapati | © 2025
+  </footer>
+
+  <!-- Video Modal -->
+  <div id="videoModal" class="fixed inset-0 bg-black bg-opacity-75 flex justify-center items-center p-4 hidden z-50">
+    <div class="bg-white rounded-lg shadow-lg max-w-xl w-full relative">
+      <button id="closeModalBtn" class="absolute top-2 right-2 text-gray-700 hover:text-gray-900 text-2xl font-bold" aria-label="Close video modal">&times;</button>
+      <video id="introVideo" controls class="w-full rounded-lg">
+        <source src="assets/intro.mov" type="video/mp4" />
+        Your browser does not support the video tag.
+      </video>
+    </div>
+  </div>
+
+  <script>
+    // Fade-in animation
+    document.querySelectorAll('.fade-in').forEach(el => {
+      el.style.opacity = 0;
+      el.style.transform = 'translateY(15px)';
+      setTimeout(() => {
+        el.style.transition = 'opacity 1s ease, transform 1s ease';
+        el.style.opacity = 1;
+        el.style.transform = 'translateY(0)';
+      }, 100);
+    });
+
+    // Quote API
+    fetch('https://api.quotable.io/random')
+      .then(res => res.json())
+      .then(data => {
+        document.getElementById('quote').textContent = `"${data.content}" — ${data.author}`;
+      })
+      .catch(error => {
+        console.error('Error fetching quote:', error);
+        document.getElementById('quote').textContent = "“The only way to do great work is to love what you do.” — Steve Jobs"; // Fallback quote
+      });
+
+    // Video modal controls
+    const openBtn = document.getElementById('openVideoBtn');
+    const closeBtn = document.getElementById('closeModalBtn');
+    const modal = document.getElementById('videoModal');
+    const video = document.getElementById('introVideo');
+
+    openBtn.addEventListener('click', () => {
+      modal.classList.remove('hidden');
+      video.play();
+    });
+
+    closeBtn.addEventListener('click', () => {
+      modal.classList.add('hidden');
+      video.pause();
+      video.currentTime = 0;
+    });
+
+    // Clicking outside the modal content closes it
+    modal.addEventListener('click', (e) => {
+      if (e.target === modal) {
+        closeBtn.click();
+      }
+    });
+  </script>
+
+</body>
+</html>

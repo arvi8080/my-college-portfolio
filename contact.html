@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Contact - Arvind Prajapati</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-50 text-gray-800 font-sans">
+
+  <!-- Header -->
+  <header class="bg-blue-600 text-white p-6 text-center text-3xl font-bold shadow-md">
+    Contact Me
+  </header>
+
+  <!-- Navbar -->
+  <nav class="bg-white shadow text-center py-4">
+    <a href="index.html" class="mx-4 text-blue-600 hover:underline">Home</a>
+    <a href="about.html" class="mx-4 text-blue-600 hover:underline">About</a>
+    <a href="books.html" class="mx-4 text-blue-600 hover:underline">Books</a>
+    <a href="contact.html" class="mx-4 text-blue-600 hover:underline font-bold">Contact</a>
+  </nav>
+
+  <!-- Main Content -->
+  <main class="p-6 max-w-3xl mx-auto space-y-10">
+
+    <!-- Profile Photo (optional) -->
+    <section class="text-center">
+      <img src="assets/myphoto.jpg" alt="Profile" class="w-32 h-32 rounded-full mx-auto shadow-md mb-4">
+      <h2 class="text-xl font-semibold">Arvind Prajapati</h2>
+    </section>
+
+    <!-- Contact Info -->
+    <section>
+      <h2 class="text-2xl font-semibold mb-4">📞 Contact Information</h2>
+      <ul class="text-lg space-y-2">
+        <li><strong>Phone:</strong> <a href="tel:+918604234006" class="text-blue-600 hover:underline">+91 8604234006</a></li>
+        <li><strong>WhatsApp:</strong> <a href="https://wa.me/918604234006" class="text-green-600 hover:underline">Chat on WhatsApp</a></li>
+        <li><strong>Email:</strong> <a href="mailto:arvindprajapatijan86@gmail.com" class="text-blue-600 hover:underline">arvindprajapatijan86@gmail.com</a></li>
+      </ul>
+    </section>
+
+    <!-- Resume Download -->
+    <section class="text-center">
+      <h2 class="text-2xl font-semibold mb-4">📄 Download My Resume</h2>
+      <a 
+        href="assets/resume.pdf" 
+        download="Arvind_Prajapati_Resume.pdf"
+        class="inline-block bg-blue-600 text-white px-6 py-2 rounded-lg hover:bg-blue-700 transition"
+      >
+        Download Resume
+      </a>
+      <p class="text-sm text-gray-500 mt-2">Make sure <code>resume.pdf</code> is inside your <code>assets/</code> folder.</p>
+    </section>
+
+    <!-- Location -->
+    <section>
+      <h2 class="text-2xl font-semibold mb-4">📍 Location</h2>
+      <iframe
+        src="https://www.google.com/maps?q=Nallasopara+East,+Palghar,+India&output=embed"
+        width="100%"
+        height="300"
+        style="border:0;"
+        allowfullscreen=""
+        loading="lazy"
+        class="rounded shadow"
+      ></iframe>
+    </section>
+
+    <!-- Social Media -->
+    <section>
+      <h2 class="text-2xl font-semibold mb-4">🔗 Social Media</h2>
+      <ul class="flex gap-6 text-lg justify-center">
+        <li><a href="https://www.linkedin.com/in/arvind-prajapati-4b6689296/" target="_blank" class="text-blue-700 hover:underline">LinkedIn</a></li>
+        <li><a href="https://github.com/arvi8080" target="_blank" class="text-gray-800 hover:underline">GitHub</a></li>
+        <li><a href="https://instagram.com" target="_blank" class="text-pink-600 hover:underline">Instagram</a></li>
+      </ul>
+    </section>
+
+    <!-- Message Form -->
+    <section>
+      <h2 class="text-2xl font-semibold mb-4">📬 Send a Message</h2>
+      <form action="https://formspree.io/f/your-form-id" method="POST" class="space-y-4">
+        <input type="text" name="name" placeholder="Your Name" required class="w-full border p-2 rounded" />
+        <input type="email" name="email" placeholder="Your Email" required class="w-full border p-2 rounded" />
+        <textarea name="message" rows="4" placeholder="Your Message" required class="w-full border p-2 rounded"></textarea>
+        <button type="submit" class="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700">Send</button>
+      </form>
+      <p class="text-sm text-gray-500 mt-2">Form powered by Formspree. Replace <code>your-form-id</code> with your actual form ID.</p>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="text-center py-4 bg-gray-200 mt-8">
+    Made by Arvind Prajapati | © 2025
+  </footer>
+
+</body>
+</html>

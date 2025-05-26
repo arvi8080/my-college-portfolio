@@ -1,0 +1,8 @@
+[
+  { "name": "HTML", "level": "Advanced" },
+  { "name": "CSS", "level": "Intermediate" },
+  { "name": "JavaScript", "level": "Intermediate" },
+  { "name": "Python", "level": "Advanced" },
+  { "name": "SQL", "level": "Intermediate" },
+  { "name": "Tailwind CSS", "level": "Intermediate" }
+]
