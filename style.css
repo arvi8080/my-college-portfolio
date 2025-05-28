@@ -77,6 +77,7 @@ footer {
   }
 }
 
+
 /* Optional: Smooth scroll */
 html {
   scroll-behavior: smooth;
@@ -102,3 +103,211 @@ html {
 #scrollTopBtn:hover {
   background-color: #1e40af; /* Tailwind blue-800 */
 }
+
+/* Base styles */
+:root {
+  --primary: #6366f1;
+  --primary-hover: #4f46e5;
+  --error: #ef4444;
+  --success: #10b981;
+  --base-100: #ffffff;
+  --base-200: #f3f4f6;
+  --base-300: #d1d5db;
+  --base-content: #1f2937;
+  --dark-100: #1f2937;
+  --dark-200: #111827;
+  --dark-300: #0f172a;
+  --dark-content: #f3f4f6;
+}
+
+/* Scrollbar styles */
+::-webkit-scrollbar {
+  height: 8px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #6366f1;
+  border-radius: 4px;
+}
+
+/* Add to cart button */
+.add-to-cart-btn {
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.add-to-cart-btn:hover {
+  background-color: #4f46e5;
+  color: white;
+}
+
+/* Mobile menu styles */
+.mobile-menu {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .mobile-menu {
+    display: block;
+  }
+}
+
+/* Payment form animation */
+.payment-form {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.5s ease;
+}
+
+.payment-form.active {
+  max-height: 1000px;
+}
+
+/* Payment method selection */
+.payment-method {
+  cursor: pointer;
+  transition: all 0.3s ease;
+  border: 2px solid transparent;
+}
+
+.payment-method.active {
+  border-color: var(--primary);
+  background-color: rgba(99, 102, 241, 0.1);
+}
+
+.payment-method:hover {
+  border-color: var(--primary);
+}
+
+.payment-method input {
+  display: none;
+}
+
+/* Toast notification */
+.toast {
+  position: fixed;
+  z-index: 50;
+  right: 1rem;
+  bottom: 1rem;
+}
+
+/* Card hover effect */
+.card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+}
+
+/* Modal transitions */
+.modal {
+  transition: opacity 0.3s ease;
+}
+
+/* Input field styles */
+.input.input-bordered {
+  border: 2px solid var(--base-300);
+  transition: border-color 0.3s ease;
+}
+
+.input.input-bordered:focus {
+  border-color: var(--primary);
+  outline: none;
+}
+
+/* Button hover effects */
+.btn-primary:hover {
+  background-color: var(--primary-hover);
+}
+
+.btn-primary:disabled {
+  opacity: 0.7;
+  cursor: not-allowed;
+}
+
+/* Dark mode specific styles */
+[data-theme="dark"] .input.input-bordered {
+  border-color: var(--dark-200);
+  background-color: var(--dark-100);
+  color: var(--dark-content);
+}
+
+[data-theme="dark"] .btn {
+  background-color: var(--dark-100);
+  color: var(--dark-content);
+}
+
+[data-theme="dark"] .card {
+  background-color: var(--dark-100);
+  color: var(--dark-content);
+}
+
+/* Responsive adjustments */
+@media (max-width: 640px) {
+  .toast {
+    right: 0.5rem;
+    bottom: 0.5rem;
+  }
+  
+  .btn {
+    padding: 0.5rem 1rem;
+    font-size: 0.875rem;
+  }
+}
+
+/* General styles */
+/* ... existing styles ... */
+
+/* Shop Page - Payment Process Styles */
+.payment-form {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.5s ease;
+}
+
+.payment-form.active {
+  max-height: 1000px;
+}
+
+.payment-method {
+  cursor: pointer;
+  transition: all 0.3s ease;
+  border: 2px solid transparent;
+}
+
+.payment-method.active {
+  border-color: var(--primary);
+  background-color: rgba(99, 102, 241, 0.1);
+}
+
+.payment-method:hover {
+  border-color: var(--primary);
+}
+
+.payment-method input {
+  display: none;
+}
+
+.input.input-bordered {
+  border: 2px solid var(--base-300);
+  transition: border-color 0.3s ease;
+}
+
+.input.input-bordered:focus {
+  border-color: var(--primary);
+  outline: none;
+}
+
+/* Dark mode specific styles for inputs (if dark mode is active) */
+[data-theme="dark"] .input.input-bordered {
+  border-color: var(--dark-200);
+  background-color: var(--dark-100);
+  color: var(--dark-content);
+}
+
+/* Other styles */
+/* ... rest of your styles ... */
+
+

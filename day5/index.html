@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Shopping Website - Home</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet" />
+  <link rel="icon" href="images/logo.png" type="image/png" />
+</head>
+<body class="bg-gray-100 min-h-screen flex flex-col">
+
+  <!-- Header / Navbar -->
+  <header class="bg-white shadow-md">
+    <div class="container mx-auto flex justify-between items-center p-4">
+      <a href="index.html" class="flex items-center space-x-2">
+        <img src="images/logo.png" alt="Logo" class="h-8 w-8" />
+        <span class="font-bold text-xl text-gray-800">ShopEase</span>
+      </a>
+      <nav class="space-x-4">
+        <a href="index.html" class="text-gray-700 hover:text-blue-600">Home</a>
+        <a href="shop.html" class="text-gray-700 hover:text-blue-600">Shop</a>
+        <a href="login.html" class="text-gray-700 hover:text-blue-600">Login</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <main class="flex-grow container mx-auto p-6">
+    <section class="text-center py-16">
+      <h1 class="text-4xl font-extrabold mb-4 text-gray-900">Welcome to ShopEase</h1>
+      <p class="text-lg text-gray-700 mb-8">
+        Discover the best products at unbeatable prices.
+      </p>
+      <a href="shop.html" class="inline-block bg-blue-600 text-white px-6 py-3 rounded hover:bg-blue-700 transition">
+        Start Shopping
+      </a>
+    </section>
+
+    <section class="mt-12 grid grid-cols-1 md:grid-cols-3 gap-8">
+      <div class="bg-white p-6 rounded shadow hover:shadow-lg transition">
+        <h3 class="text-xl font-semibold mb-2">Wide Variety</h3>
+        <p class="text-gray-600">Explore hundreds of products across many categories.</p>
+      </div>
+      <div class="bg-white p-6 rounded shadow hover:shadow-lg transition">
+        <h3 class="text-xl font-semibold mb-2">Secure Payments</h3>
+        <p class="text-gray-600">Your payment information is safe and encrypted.</p>
+      </div>
+      <div class="bg-white p-6 rounded shadow hover:shadow-lg transition">
+        <h3 class="text-xl font-semibold mb-2">Fast Delivery</h3>
+        <p class="text-gray-600">Get your orders quickly with our reliable shipping partners.</p>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-white shadow-inner text-center p-4 text-gray-500 text-sm">
+    &copy; 2025 ShopEase. All rights reserved.
+  </footer>
+
+</body>
+</html>

@@ -23,7 +23,6 @@
     crossorigin="anonymous"
     referrerpolicy="no-referrer"
   />
-
   <style>
     .counter {
       font-weight: 700;
@@ -46,7 +45,6 @@
   </style>
 </head>
 <body class="bg-gray-50 text-gray-800 font-sans transition-colors duration-500 dark:bg-gray-900 dark:text-gray-200">
-
   <!-- Header -->
   <header class="bg-gradient-to-r from-blue-600 to-indigo-700 dark:from-indigo-900 dark:to-blue-900 text-white p-6 text-center text-3xl font-extrabold shadow-md flex justify-between items-center max-w-6xl mx-auto">
     <div>ℹ️ About Arvind Prajapati</div>
@@ -54,7 +52,6 @@
       <i class="fa-regular fa-moon"></i>
     </button>
   </header>
-
   <!-- Navigation -->
   <nav class="bg-white dark:bg-gray-800 shadow text-center py-4 transition-colors duration-500 max-w-6xl mx-auto">
     <a href="index.html" class="mx-4 text-blue-600 dark:text-blue-400 hover:underline">Home</a>
@@ -62,7 +59,6 @@
     <a href="books.html" class="mx-4 text-blue-600 dark:text-blue-400 hover:underline">Books</a>
     <a href="contact.html" class="mx-4 text-blue-600 dark:text-blue-400 hover:underline">Contact</a>
   </nav>
-
   <!-- Main Content -->
   <main class="p-6 max-w-4xl mx-auto transition-opacity duration-800">
     <section class="mb-8">
@@ -72,7 +68,6 @@
         <strong>St. John College of Engineering</strong>. I love building things with code and enjoy helping others grow through education and awareness.
       </p>
     </section>
-
     <section class="mb-8">
       <h3 class="text-xl font-semibold mb-6">Skills & Experience (Months)</h3>
       <ul class="space-y-8 text-lg">
@@ -88,7 +83,6 @@
             <div class="bg-gradient-to-r from-blue-600 to-blue-400 h-5 rounded" style="width: 0%" data-width="90%"></div>
           </div>
         </li>
-
         <li>
           <div class="flex items-center justify-between mb-1">
             <div class="flex items-center space-x-3">
@@ -101,7 +95,6 @@
             <div class="bg-gradient-to-r from-purple-700 to-purple-400 h-5 rounded" style="width: 0%" data-width="50%"></div>
           </div>
         </li>
-
         <li>
           <div class="flex items-center justify-between mb-1">
             <div class="flex items-center space-x-3">
@@ -114,7 +107,6 @@
             <div class="bg-gradient-to-r from-red-600 to-red-400 h-5 rounded" style="width: 0%" data-width="50%"></div>
           </div>
         </li>
-
         <li>
           <div class="flex items-center justify-between mb-1">
             <div class="flex items-center space-x-3">
@@ -127,7 +119,6 @@
             <div class="bg-gradient-to-r from-yellow-500 to-yellow-300 h-5 rounded" style="width: 0%" data-width="20%"></div>
           </div>
         </li>
-
         <li>
           <div class="flex items-center justify-between mb-1">
             <div class="flex items-center space-x-3">
@@ -140,7 +131,6 @@
             <div class="bg-gradient-to-r from-yellow-600 to-yellow-400 h-5 rounded" style="width: 0%" data-width="45%"></div>
           </div>
         </li>
-
         <li>
           <div class="flex items-center justify-between mb-1">
             <div class="flex items-center space-x-3">
@@ -155,15 +145,13 @@
         </li>
       </ul>
     </section>
-
     <section class="mb-8">
       <h3 class="text-xl font-semibold mb-2">Future Goals</h3>
       <p class="text-lg leading-relaxed">
         My goal is to become a skilled developer and create software that helps society, especially for those in need.
-        I’m also passionate about spreading awareness on the importance of education.
+        I'm also passionate about spreading awareness on the importance of education.
       </p>
     </section>
-
     <section>
       <h3 class="text-xl font-semibold mb-2">Achievements & Volunteering</h3>
       <p class="text-lg leading-relaxed">
@@ -172,12 +160,10 @@
       </p>
     </section>
   </main>
-
   <!-- Footer -->
   <footer class="text-center py-4 bg-gray-200 dark:bg-gray-800 dark:text-gray-400 mt-8 transition-colors duration-500 max-w-6xl mx-auto">
     Made by Arvind Prajapati | © 2025
   </footer>
-
   <script>
     // Animate counters
     const counters = document.querySelectorAll('.counter');
@@ -195,7 +181,6 @@
       };
       updateCount();
     });
-
     // Animate progress bar widths
     const progressBars = document.querySelectorAll('div.bg-gradient-to-r');
     progressBars.forEach(bar => {
@@ -212,27 +197,22 @@
       };
       animate();
     });
-
     // Fade in main content on page load
     window.addEventListener('DOMContentLoaded', () => {
       document.querySelector('main').classList.add('visible');
     });
-
     // Dark mode toggle
     const toggleBtn = document.getElementById('darkToggle');
     const body = document.body;
     const moonIcon = toggleBtn.querySelector('i');
-
     // Check if user had dark mode preference before
     if(localStorage.getItem('darkMode') === 'enabled') {
       body.classList.add('dark');
       moonIcon.classList.remove('fa-moon');
       moonIcon.classList.add('fa-sun');
     }
-
     toggleBtn.addEventListener('click', () => {
       body.classList.toggle('dark');
-
       if(body.classList.contains('dark')) {
         localStorage.setItem('darkMode', 'enabled');
         moonIcon.classList.remove('fa-moon');
@@ -244,7 +224,5 @@
       }
     });
   </script>
-
 </body>
 </html>
-

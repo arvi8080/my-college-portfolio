@@ -1,0 +1,23 @@
+/* style.css */
+
+.cart-panel {
+  transition: transform 0.3s ease-in-out;
+}
+
+.cart-hidden {
+  transform: translateY(150%);
+}
+
+.cart-visible {
+  transform: translateY(0);
+}
+
+@media (min-width: 768px) {
+  .cart-panel {
+    transform: none !important;
+  }
+
+  .cart-toggle {
+    display: none;
+  }
+}

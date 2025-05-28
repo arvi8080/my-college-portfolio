@@ -1,0 +1,72 @@
+[
+  {
+    "id": 1,
+    "name": "Wireless Bluetooth Headphones",
+    "price": 59.99,
+    "image": "headphone.webp",
+    "description": "High quality sound with noise cancellation."
+  },
+  {
+    "id": 2,
+    "name": "Smartphone Case",
+    "price": 12.99,
+    "image": "phone_case.jpg",
+    "description": "Durable and stylish protective case."
+  },
+  {
+    "id": 3,
+    "name": "Men's Casual Sneakers",
+    "price": 45.0,
+    "image": "sneakers.jpg",
+    "description": "Comfortable and trendy sneakers for everyday wear."
+  },
+  {
+    "id": 4,
+    "name": "Stainless Steel Coffee Maker",
+    "price": 89.99,
+    "image": "coffee_maker.jpg",
+    "description": "Brew the perfect cup every time."
+  },
+  {
+    "id": 5,
+    "name": "Cotton T-Shirt",
+    "price": 14.5,
+    "image": "tshirt.jpg",
+    "description": "Soft, breathable cotton t-shirt available in multiple colors."
+  },
+  {
+    "id": 6,
+    "name": "LED Desk Lamp",
+    "price": 29.99,
+    "image": "desk_lamp.jpg",
+    "description": "Energy-efficient lamp with adjustable brightness."
+  },
+  {
+    "id": 7,
+    "name": "Yoga Mat",
+    "price": 25.0,
+    "image": "yoga_mat.jpg",
+    "description": "Non-slip surface for all your yoga practices."
+  },
+  {
+    "id": 8,
+    "name": "Wireless Mouse",
+    "price": 19.99,
+    "image": "wireless_mouse.jpg",
+    "description": "Ergonomic mouse with long battery life."
+  },
+  {
+    "id": 9,
+    "name": "Mystery Thriller Novel",
+    "price": 10.0,
+    "image": "book_thriller.jpg",
+    "description": "A gripping mystery to keep you on the edge."
+  },
+  {
+    "id": 10,
+    "name": "Ceramic Plant Pot",
+    "price": 18.75,
+    "image": "plant_pot.jpg",
+    "description": "Elegant ceramic pot for indoor plants."
+  }
+]
